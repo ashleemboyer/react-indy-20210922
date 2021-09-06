@@ -10,6 +10,7 @@ const DarkModeSwitch = () => {
       <Switch
         ariaLabel="Dark Mode"
         id="dark-mode-switch"
+        initialValue={false}
         onChange={handleChange}
       />
       <Icon name="moon" />
