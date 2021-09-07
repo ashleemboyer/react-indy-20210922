@@ -1,8 +1,9 @@
+import { FC } from 'react';
 import classNames from 'classnames/bind';
 import { DarkModeSwitch } from '@components';
 import styles from './AppLayout.module.scss';
 
-const AppLayout = ({ children }) => {
+const AppLayout: FC = ({ children }) => {
   // TODO: set className based on dark mode switch
   const cx = classNames.bind(styles);
   const classes = cx('AppLayout');
