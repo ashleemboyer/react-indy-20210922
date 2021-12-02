@@ -12,6 +12,7 @@
     "noEmit": true,
     "paths": {
       "@components": ["components"],
+      "@contexts": ["contexts"],
       "@stylesheets/*": ["stylesheets/*"]
     },
     "resolveJsonModule": true,

@@ -1,12 +1,15 @@
-import { FC } from 'react';
-import classNames from 'classnames/bind';
-import { DarkModeSwitch } from '@components';
-import styles from './AppLayout.module.scss';
+import { FC } from "react";
+import classNames from "classnames/bind";
+import { DarkModeSwitch } from "@components";
+import { useTheme } from "@contexts";
+import styles from "./AppLayout.module.scss";
 
 const AppLayout: FC = ({ children }) => {
-  // TODO: set className based on dark mode switch
+  const { theme } = useTheme();
   const cx = classNames.bind(styles);
-  const classes = cx('AppLayout');
+  const classes = cx("AppLayout", {
+    [`AppLayout--${theme}`]: !!theme,
+  });
 
   return (
     <div className={classes}>
