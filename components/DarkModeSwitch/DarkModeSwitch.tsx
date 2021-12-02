@@ -1,6 +1,6 @@
-import { Icon, Switch } from '@components';
-import { useTheme } from '@contexts';
-import styles from './DarkModeSwitch.module.scss';
+import { Icon, Switch } from "@components";
+import { useTheme } from "@contexts";
+import styles from "./DarkModeSwitch.module.scss";
 
 const DarkModeSwitch = () => {
   const { theme, toggleTheme } = useTheme();
@@ -13,7 +13,7 @@ const DarkModeSwitch = () => {
       <Switch
         ariaLabel="Dark Mode"
         id="dark-mode-switch"
-        initialValue={theme === 'dark'}
+        initialValue={theme === "dark"}
         onChange={handleChange}
       />
       <Icon name="moon" />

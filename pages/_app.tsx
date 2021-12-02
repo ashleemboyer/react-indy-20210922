@@ -1,9 +1,9 @@
-import type { AppProps } from 'next/app';
-import { library } from '@fortawesome/fontawesome-svg-core';
-import { fas } from '@fortawesome/free-solid-svg-icons';
-import { AppLayout } from '@components';
-import { ThemeProvider } from '@contexts';
-import '@stylesheets/global.scss';
+import type { AppProps } from "next/app";
+import { library } from "@fortawesome/fontawesome-svg-core";
+import { fas } from "@fortawesome/free-solid-svg-icons";
+import { AppLayout } from "@components";
+import { ThemeProvider } from "@contexts";
+import "@stylesheets/global.scss";
 
 library.add(fas);
 
